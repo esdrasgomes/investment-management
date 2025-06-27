@@ -1,0 +1,40 @@
+<h2>{{ isEditMode ? 'Editar Ativo' : 'Adicionar Novo Ativo' }}</h2>
+
+<form [formGroup]="assetForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="ticker">Ticker</label>
+    <input id="ticker" formControlName="ticker" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="nome">Nome</label>
+    <input id="nome" formControlName="nome" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="setor">Setor</label>
+    <input id="setor" formControlName="setor" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="preco">Preço</label>
+    <input id="preco" type="number" formControlName="preco" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="quantidade">Quantidade</label>
+    <input id="quantidade" type="number" formControlName="quantidade" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="pl">P/L</label>
+    <input id="pl" type="number" formControlName="pl" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="pvp">P/VP</label>
+    <input id="pvp" type="number" formControlName="pvp" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="dividendYield">Dividend Yield</label>
+    <input id="dividendYield" type="number" formControlName="dividendYield" class="form-control">
+  </div>
+  <div class="form-actions">
+    <button type="submit" [disabled]="!assetForm.valid" class="btn btn-primary">Salvar</button>
+    <button type="button" (click)="cancel()" class="btn btn-secondary">Cancelar</button>
+  </div>
+</form> 

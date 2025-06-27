@@ -1,0 +1,5 @@
+npx ng serve
+http://localhost:40087/
+
+json-server --watch db.json --port 3000
+http://localhost:3000/assets

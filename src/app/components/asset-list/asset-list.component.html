@@ -1,0 +1,37 @@
+<h2>Meus Ativos</h2>
+
+<div class="actions">
+  <a routerLink="/assets/new" class="btn btn-success">Adicionar Novo Ativo</a>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Ticker</th>
+      <th>Nome</th>
+      <th>Setor</th>
+      <th>Preço</th>
+      <th>Quantidade</th>
+      <th>P/L</th>
+      <th>P/VP</th>
+      <th>Dividend Yield</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let asset of assets">
+      <td>{{ asset.ticker }}</td>
+      <td>{{ asset.nome }}</td>
+      <td>{{ asset.setor }}</td>
+      <td>{{ asset.preco | currency:'BRL' }}</td>
+      <td>{{ asset.quantidade }}</td>
+      <td>{{ asset.pl }}</td>
+      <td>{{ asset.pvp }}</td>
+      <td>{{ asset.dividendYield | percent }}</td>
+      <td>
+        <a [routerLink]="['/assets/edit', asset.id]" class="btn btn-primary">Editar</a>
+        <button class="btn btn-danger" (click)="deleteAsset(asset)">Deletar</button>
+      </td>
+    </tr>
+  </tbody>
+</table> 

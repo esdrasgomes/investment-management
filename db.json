@@ -1,0 +1,26 @@
+{
+  "assets": [
+    {
+      "id": "2",
+      "ticker": "BBAS3",
+      "nome": "Banco do Brasil",
+      "setor": "Bancário",
+      "preco": 21,
+      "quantidade": 128,
+      "pl": 4,
+      "pvp": 2,
+      "dividendYield": 11
+    },
+    {
+      "id": "3",
+      "ticker": "AGRO3",
+      "nome": "Brasil Agro",
+      "setor": "Agronegócio",
+      "preco": 20,
+      "quantidade": 53,
+      "pl": 4.1,
+      "pvp": 1.9,
+      "dividendYield": 13
+    }
+  ]
+}
