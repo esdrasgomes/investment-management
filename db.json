@@ -1,12 +1,12 @@
 {
   "assets": [
     {
-      "id": "2",
+      "id": null,
       "ticker": "BBAS3",
       "nome": "Banco do Brasil",
       "setor": "Bancário",
       "preco": 21,
-      "quantidade": 128,
+      "quantidade": 125,
       "pl": 4,
       "pvp": 2,
       "dividendYield": 11

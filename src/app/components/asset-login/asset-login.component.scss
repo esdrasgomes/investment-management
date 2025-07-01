@@ -29,9 +29,9 @@ h1 {
 	left: 50%;
 	transform: translateX(-50%);
 	color: #eaf0f1;
-	font-size: 3rem;
+	font-size: 4rem;
 	text-align: center;
-	text-shadow: 2px 2px 4px rgb(41, 42, 43);
+	text-shadow: 2px 2px 4px rgb(75, 81, 82);
 	font-weight: 500;
 }
 .box {
@@ -40,8 +40,8 @@ h1 {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 400px;
-	padding: 40px;
-	margin-top: 50px;
+	padding: 30px 40px;
+	margin-top: 20px;
 	background-color: rgba(0,0,0,0.8);
 	box-sizing: border-box;
 	box-shadow: 0 15px 25px rgba(0,0,0,0.5);
@@ -100,6 +100,24 @@ h1 {
 .box input[type="submit"]:hover {
 	background-color: #0b96d6;
 }
+ .esqueceuSenha a{
+	color: #fff;
+	padding-bottom: 10px;
+	justify-content: end;
+	display: flex;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+.casdastreSe a {
+	color: #fff;
+	padding-top: 20px;
+	justify-content: center;
+	display: flex;
+	font-size: 13px;
+	text-decoration: none;
+}
+
 .title {
 	text-align: center;
 	color: #03a9f4;

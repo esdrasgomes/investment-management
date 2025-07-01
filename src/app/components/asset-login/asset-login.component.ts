@@ -23,8 +23,8 @@ import { RouterLink } from '@angular/router';
   loginFormVisible = true;
   loginButtonText = 'Login';
   logoutButtonText = 'Logout';
-  loginButtonDisabled = false;
-  logoutButtonDisabled = false;
+  // loginButtonDisabled = false;
+  // logoutButtonDisabled = false;
   loginError = false;
   loginSuccess = false;
   loginForm = {

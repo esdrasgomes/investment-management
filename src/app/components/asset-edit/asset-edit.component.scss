@@ -52,15 +52,19 @@ h2 {
 }
 
 .btn-primary:disabled {
-  background-color: #6c757d;
+  background-color: #007bff;
+  cursor: not-allowed;
+}
+.btn-primary:disabled:hover {
+  background-color: #0056b3;
   cursor: not-allowed;
 }
 
 .btn-secondary {
-  background-color: #6c757d;
+  background-color: #e9a615;
   color: white;
 }
 
 .btn-secondary:hover {
-  background-color: #545b62;
+  background-color: rgb(199, 148, 9);
 }

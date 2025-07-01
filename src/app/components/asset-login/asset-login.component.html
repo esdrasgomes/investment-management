@@ -3,7 +3,7 @@
     <div class="box">
         <h2 class="title">Login</h2>
         <!-- <h2>Login</h2>        -->
-            <form>
+            <form method="post" action="/login">
                 <div class="inputBox">
                     <input type="text" name="name" required="" autofocus="" autocomplete="off">
                     <label>Usuário</label>
@@ -12,7 +12,16 @@
                     <input type="password" name="password" required="">
                     <label>Senha</label>
                 </div>
+                <div class="esqueceuSenha">
+                    <!-- <h5 class="esqueceuSenha"> -->
+                        <a href="http://localhost:4200/login">Esqueceu a senha?</a>
+                    <!-- </h5> -->
+                </div>
                 <input type="submit" value="Entrar">
+            <div class="casdastreSe">
+                <a href="http://localhost:4200/login">Não tem conta? Cadastre-se</a>
+            </div>
+                
             </form>
     </div>
 </div>
